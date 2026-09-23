@@ -14,6 +14,7 @@ Le fichier `.nvmrc` fixe Node.js 24 pour éviter un environnement implicite.
 ## 2. Installation locale
 
 ```text
+git clone https://github.com/Errante-Creation/CP8-Lanterne-Correction
 pnpm install ci
 pnpm run check
 pnpm test
@@ -37,8 +38,22 @@ vercel link
 > Code directory : Laisser par défaut
 > Customize settings : N
 ```
-ensuite déployer avec 
-`vercel`
+
+Cela crée un nouveau project vide sur Vercel. 
+Sélectionnez ce projet.
+Vous devez configurer les variables d'environnement.
+Menu `Environment variables` → `Add environment variable`
+Choisir `Config` 
+Ajouter les clés qui sont dans `.env.example`
+Configurer la variable d'environnement en fonction de l'environnnement (production)
+ensuite déployer avec `vercel`, cela vous permet de déployer la version en production (première version)
+
+### Déployer la version de dev
+
+1. Créer une branche develop : `git checkout -b develop`
+2. Déployer avec `vercel`
+3. Configurer les variables d'environnement pour la version Preview
+
 
 ## Mise à jour
 
