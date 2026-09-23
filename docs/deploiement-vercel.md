@@ -53,9 +53,10 @@ ensuite déployer avec `vercel`, cela vous permet de déployer la version en pro
 1. Créer une branche develop : `git checkout -b develop`
 2. Déployer avec `vercel`
 3. Configurer les variables d'environnement pour la version Preview
+4. Lancer un Redeploy sur la version Preview
 
 
-## Mise à jour
+## 4. Procédure de mise à jour
 
 Pour publier une nouvelle version :
 
@@ -64,4 +65,17 @@ Pour publier une nouvelle version :
 3. Mettre à jour les tests si le comportement change
 4. Lancer `pnpm run check` et `pnpm test`
 5. Créer un commit explicite
-6. Déployer la preview : ``
+6. Déployer la preview : `vercel`
+7. Vérifier les routes
+8. Publier en production
+
+### Publier en production
+
+Pour publier en production :
+
+1. Fusionner la branche develop avec la branche main
+2. Lancer `vercel --prod`
+
+## 5. Retour en arrière
+
+En cas d'échec, sélectionner le déploiement précédent dans l'historique Vercel et le promouvoir en Production.

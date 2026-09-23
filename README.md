@@ -26,3 +26,5 @@ L’API est disponible sur `http://localhost:3000`.
 - `GET /api/curiosities/:slug`
 
 Le déploiement cible Vercel. Les variables d’environnement sont listées dans `.env.example`. Aucune donnée sensible ne doit être ajoutée au dépôt.
+
+Production : [Site déployé sur Vercel](https://cp8-lanterne-correction-zeta.vercel.app/)
